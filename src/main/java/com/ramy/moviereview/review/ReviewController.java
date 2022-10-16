@@ -28,12 +28,12 @@ public class ReviewController {
     }
 
     @PostMapping(value = "/addReview", consumes = "application/json")
-    public ResponseEntity<ReviewEntity> addReview(@RequestBody @Valid ReviewEntity reviewEntity){
+    public ResponseEntity<ReviewEntity> addReview(@RequestBody @Valid ReviewDTO reviewDTO){
         String methodName = "addReview()" + DELIMITER ;
-        log.debug(methodName + "Enter." + DELIMITER + reviewEntity);
+        log.debug(methodName + "Enter with Review received" + DELIMITER + reviewDTO);
 
         log.debug(methodName + "Exit.");
-        return ResponseEntity.status(HttpStatus.CREATED).body(reviewService.addReview(reviewEntity));
+        return ResponseEntity.status(HttpStatus.CREATED).body(reviewService.addReview(reviewDTO));
     }
 
 }

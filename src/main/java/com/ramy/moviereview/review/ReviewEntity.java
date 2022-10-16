@@ -17,7 +17,7 @@ public class ReviewEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private long id;
 
     @NotEmpty(message="shortReviewDescription is required")
     private String shortReviewDescription;
