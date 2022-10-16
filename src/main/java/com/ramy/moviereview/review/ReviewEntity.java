@@ -22,10 +22,6 @@ public class ReviewEntity {
     @NotEmpty(message="shortReviewDescription is required")
     private String shortReviewDescription;
 
-    @Range(min = 1, max=10, message = "Overall Rating must be a value between 1 and 10")
-    private int overAllRating;
-
-
-
-
+    @Range(min = 1, max = 10, message = "Overall Rating must be between 1 and 10")
+    private double overAllRating;
 }
