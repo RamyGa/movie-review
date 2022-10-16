@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import javax.validation.Valid;
 
 @Slf4j
-@Controller
+@Controller("/reviews")
 public class ReviewController {
 
     private final String DELIMITER = "|";

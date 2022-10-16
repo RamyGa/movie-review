@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Range;
 
-
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 
@@ -16,8 +15,8 @@ import javax.validation.constraints.NotEmpty;
 public class ReviewEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
-    private long id;
+    @Column(nullable = false)
+    private long reviewId;
 
     @NotEmpty(message="shortReviewDescription is required")
     private String shortReviewDescription;
