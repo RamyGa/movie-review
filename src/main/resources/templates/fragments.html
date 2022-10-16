@@ -18,12 +18,12 @@
     <header class="p-3 mb-3 border-bottom">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                    <img class="logo pr-5" src="img/review_logo.png"/>
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 pr-5 text-dark text-decoration-none">
+                    <img class="logo" src="img/review_logo.png"/>
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Movies</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Movies</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark">TV Shows</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark">Live plays</a></li>
                     <li><a href="#" class="nav-link px-2 link-dark">Games</a></li>
@@ -49,8 +49,53 @@
         </div>
     </header>
 </div>
+<div th:fragment="footer" class="container-fluid-footer pb-0 mb-0 justify-content-center text-light ">
+    <footer>
+        <div class="row my-5 justify-content-center py-5 ">
+            <div class="col-11 padding-bottom-100">
+                <div class="row  ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                        <h3 class="text-muted mb-md-0 mb-5 bold-text">Review title here!</h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a  th:href="@{/}">Home</a>
+                            </li>
+                            <li>
+                                <a  th:href="@{/}">About</a>
+                            </li>
+                            <li>
+                                <a  th:href="@{/}">Blog</a>
+                            </li>
+                            <li>
+                                <a  th:href="@{/}">Portfolio</a>
+                            </li>
 
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>TERMS & CONDITIONS</b></h6>
+                        <p class="mb-1">terms & conditions</p>
 
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                        <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#169;</span> Ramy Gatie All Rights Reserved.</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                        <h6 class="mt-55 mt-2 text-muted bold-text"><b>SUPPORT</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> ...@gmail.com</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                        <h6 class="text-muted bold-text"><b>PRIVACY POLICY</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span>link for PP</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
 
 
 

@@ -1,3 +1,22 @@
 .logo{
     width: 60px;
 }
+
+.px-2 {
+    padding-right: 0.5rem!important;
+    padding-left: 2.5rem!important;
+}
+
+.carousel {
+    width:67%;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.container-fluid-footer {
+    overflow: hidden;
+    margin-top: 35%;
+    background: #262626;
+    color: #627482 !important;
+
+}
