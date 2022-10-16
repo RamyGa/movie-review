@@ -2,19 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org" lang="en-US"  xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
-<!--<head th:replace="~{fragments :: head(title='title! Home')}"></head>-->
+<head th:replace="~{fragments :: head(title='title! Home')}"></head>
 
 
 <!--<div th:replace="fragments::nav_bar"></div>-->
 
 
 <body>
-<!--<h1 th:text="${key}"></h1>-->
-<h1>Hello</h1>
+<div th:replace="fragments::header"></div>
+<h1 th:text="${key}"></h1>
+
 
 </body>
 <!--<div th:replace="fragments::footer"></div>-->
-<!--<div th:replace="fragments::scripts"></div>-->
+<div th:replace="fragments::scripts"></div>
 
 
 </html>

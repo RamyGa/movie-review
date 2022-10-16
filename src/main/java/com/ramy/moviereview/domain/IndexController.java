@@ -1,4 +1,4 @@
-package com.ramy.moviereview;
+package com.ramy.moviereview.domain;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -13,7 +13,7 @@ public class IndexController {
 
     @GetMapping("/")
     String indexPage (Model model){
-//        model.addAttribute("key", "some value");
+        model.addAttribute("key", "some value");
         return "web_pages/index";
     }
 
